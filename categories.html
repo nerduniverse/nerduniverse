@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categorie — NerdUniverse</title>
+  <meta name="description" content="Sfoglia tutte le categorie di NerdUniverse: scienza, coding, matematica, fisica, biologia e molto altro.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-bracket">[</span>Nerd<span class="logo-accent">Universe</span><span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="categories.html" class="active">Categorie</a></li>
+        <li><a href="categories.html#featured">Novità</a></li>
+        <li><a href="about.html">Chi siamo</a></li>
+      </ul>
+      <button class="nav-cta" onclick="location.href='categories.html'">Esplora ↗</button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="section-inner">
+      <div class="section-label">// Il negozio</div>
+      <h1 class="section-title">Tutti i prodotti</h1>
+      <p class="page-sub">Scegli la tua categoria e trova il gadget perfetto.</p>
+    </div>
+  </section>
+
+  <!-- FILTER BAR -->
+  <section class="filter-bar">
+    <div class="section-inner">
+      <div class="filter-row">
+        <div class="filter-cats" id="filter-cats">
+          <!-- Populated by filters.js -->
+        </div>
+        <div class="filter-type">
+          <button class="filter-btn active" data-type="all">Tutti</button>
+          <button class="filter-btn" data-type="tshirt">Magliette</button>
+          <button class="filter-btn" data-type="mug">Tazze</button>
+          <button class="filter-btn" data-type="other">Altri</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS GRID -->
+  <section class="shop-grid">
+    <div class="section-inner">
+      <div class="products-grid" id="shop-products">
+        <!-- Populated by products.js -->
+      </div>
+      <div id="no-results" class="no-results" style="display:none;">
+        <p>// Nessun prodotto trovato in questa categoria.</p>
+        <button onclick="resetFilters()" class="btn-ghost">Mostra tutti</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo">[Nerd<span class="logo-accent">Universe</span>]</span>
+        <p>Per chi vede il mondo in equazioni, codice e tavole periodiche.</p>
+      </div>
+      <div class="footer-links">
+        <a href="categories.html">Categorie</a>
+        <a href="about.html">Chi siamo</a>
+      </div>
+      <div class="footer-copy">
+        <p>© 2025 NerdUniverse — Stampato su richiesta con ❤ e molta caffeina.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/filters.js"></script>
+</body>
+</html>

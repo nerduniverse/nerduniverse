@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NerdUniverse — Il negozio per chi ama la scienza</title>
+  <meta name="description" content="Magliette, tazze e gadget per nerd. Scienza, matematica, coding, biologia e molto altro. Il regalo perfetto per l'amico nerd.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-bracket">[</span>Nerd<span class="logo-accent">Universe</span><span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="categories.html">Categorie</a></li>
+        <li><a href="categories.html#featured">Novità</a></li>
+        <li><a href="about.html">Chi siamo</a></li>
+      </ul>
+      <button class="nav-cta" onclick="location.href='categories.html'">Esplora ↗</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-inner">
+      <div class="hero-tag">// Per chi vede il mondo in modo diverso</div>
+      <h1 class="hero-title">
+        Il negozio<br>
+        per <span class="gradient-text">nerd senza filtri</span>
+      </h1>
+      <p class="hero-sub">
+        Magliette, tazze e gadget con la scienza, la matematica e il codice che ami.<br>
+        Regali che fanno ridere (e pensare).
+      </p>
+      <div class="hero-actions">
+        <a href="categories.html" class="btn-primary">Esplora i prodotti</a>
+        <a href="#categories" class="btn-ghost">Scegli la tua area →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">12+</span><span class="stat-label">categorie</span></div>
+        <div class="stat-sep">//</div>
+        <div class="stat"><span class="stat-num">100%</span><span class="stat-label">on demand</span></div>
+        <div class="stat-sep">//</div>
+        <div class="stat"><span class="stat-num">∞</span><span class="stat-label">nerditudine</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="floating-card card-1">E = mc²</div>
+      <div class="floating-card card-2">print("Hello, World!")</div>
+      <div class="floating-card card-3">∫∞ nerd dx</div>
+      <div class="floating-card card-4">404: Sleep not found</div>
+      <div class="floating-card card-5">Au → 79</div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="categories" id="categories">
+    <div class="section-inner">
+      <div class="section-label">// Scegli il tuo universo</div>
+      <h2 class="section-title">Categorie</h2>
+      <div class="cat-grid" id="cat-grid">
+        <!-- Populated by main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="featured" id="featured">
+    <div class="section-inner">
+      <div class="section-label">// Prodotti in evidenza</div>
+      <h2 class="section-title">Più amati dai nerd</h2>
+      <div class="products-grid" id="featured-grid">
+        <!-- Populated by main.js -->
+      </div>
+      <div class="section-cta">
+        <a href="categories.html" class="btn-primary">Vedi tutti i prodotti</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why-us">
+    <div class="section-inner">
+      <div class="section-label">// Come funziona</div>
+      <h2 class="section-title">Semplice come un algoritmo</h2>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Scegli il prodotto</h3>
+          <p>Naviga tra le categorie e trova quello che fa per te (o per il tuo amico nerd).</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>Vai al negozio</h3>
+          <p>Cliccando sul prodotto, atterri direttamente sulla pagina d'acquisto del nostro partner.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>Ricevi a casa</h3>
+          <p>Il prodotto viene stampato e spedito direttamente a te. Zero magazzino, massima qualità.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo">[Nerd<span class="logo-accent">Universe</span>]</span>
+        <p>Per chi vede il mondo in equazioni, codice e tavole periodiche.</p>
+      </div>
+      <div class="footer-links">
+        <a href="categories.html">Categorie</a>
+        <a href="about.html">Chi siamo</a>
+      </div>
+      <div class="footer-copy">
+        <p>© 2025 NerdUniverse — Stampato su richiesta con ❤ e molta caffeina.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

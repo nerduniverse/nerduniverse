@@ -1,0 +1,53 @@
+/* ==========================================
+   NerdUniverse — Animations
+   ========================================== */
+
+@keyframes float1 {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes float2 {
+  0%, 100% { transform: translateY(0px) rotate(-1deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pulse-accent {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(124, 58, 237, 0); }
+}
+
+/* Entry animations */
+.hero-tag   { animation: fadeInUp 0.5s ease both; }
+.hero-title { animation: fadeInUp 0.5s ease 0.1s both; }
+.hero-sub   { animation: fadeInUp 0.5s ease 0.2s both; }
+.hero-actions { animation: fadeInUp 0.5s ease 0.3s both; }
+.hero-stats { animation: fadeInUp 0.5s ease 0.4s both; }
+
+.cat-card {
+  animation: fadeIn 0.4s ease both;
+}
+
+.product-card {
+  animation: fadeInUp 0.4s ease both;
+}
+
+/* Stagger utility (applied via JS) */
+.stagger-1 { animation-delay: 0.05s; }
+.stagger-2 { animation-delay: 0.10s; }
+.stagger-3 { animation-delay: 0.15s; }
+.stagger-4 { animation-delay: 0.20s; }
+.stagger-5 { animation-delay: 0.25s; }
+.stagger-6 { animation-delay: 0.30s; }
+.stagger-7 { animation-delay: 0.35s; }
+.stagger-8 { animation-delay: 0.40s; }
